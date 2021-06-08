@@ -1,0 +1,51 @@
+.imgViewer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow > img {
+  width: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 640px;
+}
+
+.background {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.description {
+  z-index: 10;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.container {
+  height: 640px;
+  width: calc(640px * (16 / 9));
+  position: relative;
+}
+
+.background > img {
+  height: 640px;
+}

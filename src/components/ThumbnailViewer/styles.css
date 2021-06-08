@@ -1,0 +1,34 @@
+.thumbnailViewer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  height: 100px;
+  margin: 10px;
+  border: 5px solid lightgrey;
+  padding: 5px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.thumbnail > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 50px;
+  color: white;
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
