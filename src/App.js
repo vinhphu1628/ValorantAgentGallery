@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import imgData from "./imgData";
 import ImgViewer from "./components/ImgViewer/ImgViewer";
@@ -43,21 +43,19 @@ function App() {
   });
 
   return (
-    <Fragment>
-      <div className="App">
-        <h1>Valorant Agents</h1>
-        <ImgViewer
-          chosenImg={imgData[chosenIdx]}
-          prevHandler={prevHandler}
-          nextHandler={nextHandler}
-        ></ImgViewer>
-        <ThumbnailViewer
-          imgData={imgData}
-          chosenIdx={chosenIdx}
-          setChosenIdx={setChosenIdx}
-        ></ThumbnailViewer>
-      </div>
-    </Fragment>
+    <div className="App">
+      <h1>Valorant Agents</h1>
+      <ImgViewer
+        chosenImg={imgData[chosenIdx]}
+        prevHandler={prevHandler}
+        nextHandler={nextHandler}
+      ></ImgViewer>
+      <ThumbnailViewer
+        imgData={imgData}
+        chosenIdx={chosenIdx}
+        setChosenIdx={setChosenIdx}
+      ></ThumbnailViewer>
+    </div>
   );
 }
 

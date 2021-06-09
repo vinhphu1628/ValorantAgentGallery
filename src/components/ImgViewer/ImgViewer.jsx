@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import "./styles.css";
+import Arrow from "../Arrow/Arrow";
+import "./imgViewerStyles.css";
 import prevArrow from "../../assests/prevArrow.png";
 import nextArrow from "../../assests/nextArrow.png";
 
@@ -10,9 +11,11 @@ function ImgViewer(props) {
     <Fragment>
       <div className="imgViewer">
         <div className="wrapper">
-          <button className="arrow" onClick={prevHandler}>
-            <img src={prevArrow} alt="previous-arrow"></img>
-          </button>
+          <Arrow
+            onClick={prevHandler}
+            src={prevArrow}
+            alt="previous-arrow"
+          ></Arrow>
           <div className="container">
             <div className="description">
               <h3>{chosenImg.title}</h3>
@@ -26,9 +29,7 @@ function ImgViewer(props) {
               ></img>
             </div>
           </div>
-          <button className="arrow" onClick={nextHandler}>
-            <img src={nextArrow} alt="next-arrow"></img>
-          </button>
+          <Arrow onClick={nextHandler} src={nextArrow} alt="next-arrow"></Arrow>
         </div>
       </div>
     </Fragment>

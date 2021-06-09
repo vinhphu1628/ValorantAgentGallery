@@ -1,0 +1,7 @@
+.arrow {
+  cursor: pointer;
+}
+
+.arrow > img {
+  width: 50px;
+}
